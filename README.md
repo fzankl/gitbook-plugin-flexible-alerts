@@ -2,7 +2,7 @@
 
 This GitBook Plugin converts blockquotes into beautiful alerts.
 
-![Modern Alerts](.github/readme.png)
+![Sample alerts created with plugin 'modern-alerts'](https://user-images.githubusercontent.com/44210522/50688524-1fcf6d00-1026-11e9-98b1-2dfbddacc544.jpg)
 
 ## Installation
 
