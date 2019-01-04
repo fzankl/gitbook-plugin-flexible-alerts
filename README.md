@@ -1,6 +1,6 @@
 # GitBook Plugin: Modern Alerts
 
-This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel can be configured so the alerts fit your needs.
+This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel can be configured so the alerts fit your needs (some examples are shown below).
 
 ![Sample alerts created with plugin 'modern-alerts'](https://user-images.githubusercontent.com/44210522/50688702-ea774f00-1026-11e9-9281-ca615cb466f5.jpg)
 
@@ -94,7 +94,7 @@ Note: Above snippets can be used as complete `book.json` file, if one of these m
 
 ## Usage
 
-To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!<<TypeOfAlert>>]`, using on of following types. Please see code snippets for working alerts.
+To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!type]`, using on of following types. Please see code snippets for working alerts.
 
 * NOTE
 * TIP
@@ -111,14 +111,23 @@ To use the plugin just modify an existing blockquote and prepend a line matching
 > An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'.
 ```
 
-As you can see in the second snippet output can be configured on alert level also. Supported configuration options are listed in following table:
+As you can see in the second snippet output can be configured on alert level also. Supported options are listed in following table:
 
-| Key            | Allowed values |
+| Key            | Allowed value |
 | --------------- | ---- |
 | style | callout, flat |
 | label  | any text |
 | labelVisibility | visible (default), hidden |
 | iconVisibility  | visible (default), hidden |
+
+Multiple options can be used for single alerts as shown below:
+
+```markdown
+> [!NOTE|style:flat|label:My own heading|iconVisibility:false]
+> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'. In addition, this alert uses an own heading and hides specific icon.
+```
+
+![Custom alert](https://user-images.githubusercontent.com/44210522/50689970-04676080-102c-11e9-9cbc-8af129cb988c.png)
 
 ## Troubleshooting
 
