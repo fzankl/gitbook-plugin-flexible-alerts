@@ -1,4 +1,6 @@
-install: npm
+language: node_js
+node_js:
+ - "node"
 
 jobs:
   include:
