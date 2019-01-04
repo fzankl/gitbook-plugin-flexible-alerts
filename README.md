@@ -1,14 +1,14 @@
-# GitBook Plugin: Modern Alerts
+# GitBook Plugin: Flexible Alerts
 
 This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel can be configured so the alerts fit your needs (some examples are shown below).
 
-![Sample alerts created with plugin 'modern-alerts'](https://user-images.githubusercontent.com/44210522/50688702-ea774f00-1026-11e9-9281-ca615cb466f5.jpg)
+![Sample alerts created with plugin 'flexible-alerts'](https://user-images.githubusercontent.com/44210522/50688702-ea774f00-1026-11e9-9281-ca615cb466f5.jpg)
 
 ## Installation
 
 ### Step #1 - Update book.json file
 
-1. In you gitbook's book.json file, add `modern-alerts` to plugins list.
+1. In you gitbook's book.json file, add `flexible-alerts` to plugins list.
 2. In pluginsConfig, set base value which is base path to your github or gitlab or other code repo. Trailing slash is NOT required.
 3. By default style 'callout' and headings 'Note', 'Tip', 'Warning', 'Attention' will be used. You can change it using plugin configuration via `book.json` or for a single alert in your markdown files.
 
@@ -17,7 +17,7 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
 ```json
 {
   "plugins": [
-    "modern-alerts"
+    "flexible-alerts"
   ]
 }
 ```
@@ -27,10 +27,10 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
 ```json
 {
   "plugins": [
-    "modern-alerts"
+    "flexible-alerts"
   ],
   "pluginsConfig": {
-    "modern-alerts": {
+    "flexible-alerts": {
       "style": "flat"
     }
   }
@@ -42,10 +42,10 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
 ```json
 {
   "plugins": [
-    "modern-alerts"
+    "flexible-alerts"
   ],
   "pluginsConfig": {
-    "modern-alerts": {
+    "flexible-alerts": {
       "note": "Hinweis",
       "tip": "Tipp",
       "warning": "Warnung",
@@ -60,10 +60,10 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
 ```json
 {
   "plugins": [
-    "modern-alerts"
+    "flexible-alerts"
   ],
   "pluginsConfig": {
-    "modern-alerts": {
+    "flexible-alerts": {
       "note": {
           "de": "Hinweis",
           "en": "Note"
@@ -89,7 +89,7 @@ Note: Above snippets can be used as complete `book.json` file, if one of these m
 
 ### Step #2 - gitbook commands
 
-1. Run `gitbook install`. It will automatically install `modern-alerts` gitbook plugin for your book. This is needed only once.
+1. Run `gitbook install`. It will automatically install `flexible-alerts` gitbook plugin for your book. This is needed only once.
 2. Build your book (`gitbook build`) or serve (`gitbook serve`) as usual.
 
 ## Usage
