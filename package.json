@@ -15,7 +15,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "homepage": "https://github.com/zanfab/gitbook-plugin-modern-alerts#readme",
   "repository": {
