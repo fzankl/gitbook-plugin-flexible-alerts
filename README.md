@@ -94,7 +94,7 @@ Note: Above snippets can be used as complete `book.json` file, if one of these m
 
 ## Usage
 
-To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!type]`, using on of following types. Please see code snippets for working alerts.
+To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!type]`, using one of following types. Please see code snippets for working alerts.
 
 * NOTE
 * TIP
