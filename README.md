@@ -124,7 +124,8 @@ Multiple options can be used for single alerts as shown below:
 
 ```markdown
 > [!NOTE|style:flat|label:My own heading|iconVisibility:false]
-> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'. In addition, this alert uses an own heading and hides specific icon.
+> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'.
+> In addition, this alert uses an own heading and hides specific icon.
 ```
 
 ![Custom alert](https://user-images.githubusercontent.com/44210522/50689970-04676080-102c-11e9-9cbc-8af129cb988c.png)
