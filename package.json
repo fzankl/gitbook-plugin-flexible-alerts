@@ -1,5 +1,5 @@
 {
-  "name": "gitbook-plugin-modern-alerts",
+  "name": "gitbook-plugin-flexible-alerts",
   "version": "1.0.0",
   "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts",
   "keywords": [
@@ -17,13 +17,13 @@
   "scripts": {
     "test": ""
   },
-  "homepage": "https://github.com/zanfab/gitbook-plugin-modern-alerts#readme",
+  "homepage": "https://github.com/zanfab/gitbook-plugin-flexible-alerts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zanfab/gitbook-plugin-modern-alerts.git"
+    "url": "git+https://github.com/zanfab/gitbook-plugin-flexible-alerts.git"
   },
   "bugs": {
-    "url": "https://github.com/zanfab/gitbook-plugin-modern-alerts/issues"
+    "url": "https://github.com/zanfab/gitbook-plugin-flexible-alerts/issues"
   },
   "gitbook": {
     "properties": {
