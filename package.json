@@ -1,7 +1,7 @@
 {
   "name": "gitbook-plugin-flexible-alerts",
   "version": "1.0.0",
-  "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts",
+  "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts.",
   "keywords": [
     "gitbook",
     "plugin",
