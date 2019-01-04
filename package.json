@@ -1,0 +1,55 @@
+{
+  "name": "gitbook-plugin-modern-alerts",
+  "version": "1.0.0",
+  "engines": {
+    "gitbook": ">2.x.x"
+  },
+  "description": "GitBook plugin to convert blockquotes into beautiful alerts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zanfab/gitbook-plugin-modern-alerts.git"
+  },
+  "keywords": [
+    "gitbook",
+    "alerts"
+  ],
+  "author": "Fabian Zankl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zanfab/gitbook-plugin-modern-alerts/issues"
+  },
+  "homepage": "https://github.com/zanfab/gitbook-plugin-modern-alerts#readme",
+  "gitbook": {
+    "properties": {
+      "style": {
+        "type": "string",
+        "title": "Style used for alerts.",
+        "default": "callout"
+      },
+      "note": {
+          "type": ["string", "object"],
+          "title": "Label for alerts of type 'Note'",
+          "default": "Note"
+      },
+      "tip": {
+        "type": ["string", "object"],
+        "title": "Label for alerts of type 'Tip'",
+        "default": "Tip"
+      },
+      "warning": {
+        "type": ["string", "object"],
+        "title": "Label for alerts of type 'Warning'",
+        "default": "Warning"
+      },
+      "danger": {
+        "type": ["string", "object"],
+        "title": "Label for alerts of type 'Danger'",
+        "default": "Attention"
+      }
+    }
+  }
+}
