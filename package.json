@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-modern-alerts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts",
   "keywords": [
     "gitbook",
@@ -33,22 +33,34 @@
         "default": "callout"
       },
       "note": {
-          "type": ["string", "object"],
+          "type": [
+            "string",
+            "object"
+          ],
           "title": "Label for alerts of type 'note'",
           "default": "Note"
       },
       "tip": {
-        "type": ["string", "object"],
+        "type": [
+          "string",
+          "object"
+        ],
         "title": "Label for alerts of type 'tip'",
         "default": "Tip"
       },
       "warning": {
-        "type": ["string", "object"],
+        "type": [
+          "string",
+          "object"
+        ],
         "title": "Label for alerts of type 'warning'",
         "default": "Warning"
       },
       "danger": {
-        "type": ["string", "object"],
+        "type": [
+          "string",
+          "object"
+        ],
         "title": "Label for alerts of type 'danger'",
         "default": "Attention"
       }
