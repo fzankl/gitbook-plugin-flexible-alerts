@@ -1,7 +1,8 @@
+install: npm
+
 jobs:
   include:
     - stage: npm release
-      if: tag IS present
       deploy:
         provider: npm
         email: "$NPM_EMAIL"
