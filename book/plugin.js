@@ -53,7 +53,7 @@ function findAlertSetting(input, key, fallback, callback) {
 
 require(["gitbook", "jQuery"], function(gitbook, $) {
     gitbook.events.bind("page.change", function() {
-        var gitBookConfiguration = gitbook.state.config.pluginsConfig['modern-alerts'];
+        var gitBookConfiguration = gitbook.state.config.pluginsConfig['flexible-alerts'];
 
         $('blockquote').each(function() {
             var origin = $(this).html();

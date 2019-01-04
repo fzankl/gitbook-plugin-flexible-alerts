@@ -2,13 +2,10 @@ language: node_js
 node_js:
  - "node"
 
-jobs:
-  include:
-    - stage: npm release
-      deploy:
-        provider: npm
-        email: "$NPM_MAIL"
-        api_key: "$NPM_TOKEN"
-        on:
-          tags: true
-          branch: master
+deploy:
+  provider: npm
+  email: "$NPM_MAIL"
+  api_key: "$NPM_TOKEN"
+  on:
+    tags: true
+    branch: master
