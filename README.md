@@ -2,6 +2,8 @@
 
 This GitBook Plugin converts blockquotes into beautiful alerts.
 
+![Modern Alerts](.github/readme.png)
+
 ## Installation
 
 ### Step #1 - Update book.json file
