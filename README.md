@@ -136,8 +136,8 @@ As you can see in the second snippet, output can be configured on alert level al
 Multiple options can be used for single alerts as shown below:
 
 ```markdown
-> [!NOTE|style:flat|label:My own heading|iconVisibility:false]
-> An alert of type 'note' using alert specific style 'flat' which overrides global style 'callout'.
+> [!TIP|style:flat|label:My own heading|iconVisibility:false]
+> An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
 > In addition, this alert uses an own heading and hides specific icon.
 ```
 
@@ -147,19 +147,19 @@ As mentioned above you can provide your own alert types. Therefore, you have to 
 
 ```json
 {
-	"plugins": [
-		"flexible-alerts"
-	],
-	"pluginsConfig": {
-		"flexible-alerts": {
-			"style": "callout",
-			"comment": {
-				"label": "Comment",
-			    "icon": "fa-comments",
-			    "className": "info"
-			}
-		}
-	}
+  "plugins": [
+    "flexible-alerts"
+  ],
+  "pluginsConfig": {
+    "flexible-alerts": {
+      "style": "callout",
+      "comment": {
+        "label": "Comment",
+        "icon": "fa-comments",
+        "className": "info"
+      }
+    }
+  }
 }
 ```
 
