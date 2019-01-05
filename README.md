@@ -47,17 +47,17 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
   "pluginsConfig": {
     "flexible-alerts": {
       "note": {
-	    "label": "Hinweis"
-	  },
+        "label": "Hinweis"
+      },
       "tip": {
-	    "label": "Tipp"
-	  },
+        "label": "Tipp"
+      },
       "warning": {
-	    "label": "Warnung"
-	  },
+        "label": "Warnung"
+      },
       "danger": {
-	    "label": "Achtung"
-	  }
+        "label": "Achtung"
+      }
     }
   }
 }
@@ -73,29 +73,29 @@ This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel ca
   "pluginsConfig": {
     "flexible-alerts": {
       "note": {
-	    "label": {
+        "label": {
           "de": "Hinweis",
           "en": "Note"
         }
-	  },
+      },
       "tip": {
-	    "label": {
+        "label": {
           "de": "Tipp",
           "en": "Tip"
         }
-	  },
+      },
       "warning": {
-	    "label": {
+        "label": {
           "de": "Warnung",
           "en": "Warning"
         }
-	  },
+      },
       "danger": {
-	    "label": {
+        "label": {
           "de": "Achtung",
           "en": "Attention"
         }
-	  }
+      }
     }
   }
 }
