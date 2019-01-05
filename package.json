@@ -1,12 +1,15 @@
 {
   "name": "gitbook-plugin-flexible-alerts",
   "version": "1.0.0",
-  "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts.",
+  "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts using preconfigured or own styles and alert types.",
   "keywords": [
     "gitbook",
     "plugin",
-    "alerts",
-    "blockquotes"
+    "alert",
+    "blockquotes",
+    "quote",
+    "hint",
+    "callout"
   ],
   "author": "Fabian Zankl",
   "license": "MIT",
@@ -33,36 +36,40 @@
         "default": "callout"
       },
       "note": {
-          "type": [
-            "string",
-            "object"
-          ],
-          "title": "Label for alerts of type 'note'",
-          "default": "Note"
+        "type": "object",
+        "title": "Configuration for alerts of type 'note'",
+        "default": {
+          "label": "Note",
+          "icon": "fa-info-circle",
+          "className": "info"
+        }
       },
       "tip": {
-        "type": [
-          "string",
-          "object"
-        ],
-        "title": "Label for alerts of type 'tip'",
-        "default": "Tip"
+        "type": "object",
+        "title": "Configuration for alerts of type 'tip'",
+        "default": {
+          "label": "Tip",
+          "icon": "fa-lightbulb-o",
+          "className": "tip"
+        }
       },
       "warning": {
-        "type": [
-          "string",
-          "object"
-        ],
-        "title": "Label for alerts of type 'warning'",
-        "default": "Warning"
+        "type": "object",
+        "title": "Configuration for alerts of type 'warning'",
+        "default": {
+          "label": "Warning",
+          "icon": "fa-exclamation-triangle",
+          "className": "warning"
+        }
       },
       "danger": {
-        "type": [
-          "string",
-          "object"
-        ],
-        "title": "Label for alerts of type 'danger'",
-        "default": "Attention"
+        "type": "object",
+        "title": "Configuration for alerts of type 'danger'",
+        "default": {
+          "label": "Attention",
+          "icon": "fa-ban",
+          "className": "danger"
+        }
       }
     }
   }

@@ -1,46 +1,3 @@
-var styleConfiguration = {
-    note: {
-        callout: {
-            icon: '<i class="fa fa-info-circle"></i>',
-            className: 'alert callout info'
-        },
-        flat: {
-            icon: '<i class="fa fa-info-circle"></i>',
-            className: 'alert flat info'
-        }
-    },
-    tip: {
-        callout: {
-            icon: '<i class="fa fa-lightbulb-o"></i>',
-            className: 'alert callout tip'
-        },
-        flat: {
-            icon: '<i class="fa fa-lightbulb-o"></i>',
-            className: 'alert flat tip'
-        } 
-    },
-    warning: {
-        callout: {
-            icon: '<i class="fa fa-exclamation-triangle"></i>',
-            className: 'alert callout warning'
-        },
-        flat: {
-            icon: '<i class="fa fa-exclamation-triangle"></i>',
-            className: 'alert flat warning'
-        }
-    },
-    danger: {
-        callout: {
-            icon: '<i class="fa fa-ban"></i>',
-            className: 'alert callout danger'
-        },
-        flat: {
-            icon: '<i class="fa fa-ban"></i>',
-            className: 'alert flat danger'
-        } 
-    }  
-};
-
 function findAlertSetting(input, key, fallback, callback) {
     var match = (input || '').match(new RegExp(`${key}:(([\\w\\s]*))`));
 
@@ -58,14 +15,19 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         $('blockquote').each(function() {
             var origin = $(this).html();
             var content = origin.replace(/\[!(\w*)((?:\|[\w*:[\w\s]*)*?)\]([\s\S]*)/g, (match, key, settings, value) => {
-                // Style configuration
-                var styleKey = findAlertSetting(settings, 'style', gitBookConfiguration['style']);
-                var style = styleConfiguration[key.toLowerCase()][styleKey];
+                var config = gitBookConfiguration[key.toLowerCase()]
+
+                if (!config) {
+                    return match;
+                }
                 
-                // Heading configuration
+                // Style configuration
+                var style = findAlertSetting(settings, 'style', gitBookConfiguration['style']);
                 var isIconVisible = findAlertSetting(settings, 'iconVisibility', 'visible', (value) => value !== 'hidden');
                 var isLabelVisible = findAlertSetting(settings, 'labelVisibility', 'visible', (value) => value !== 'hidden');
-                var label = findAlertSetting(settings, 'label', gitBookConfiguration[key.toLowerCase()]);
+                var label = findAlertSetting(settings, 'label', config['label']);
+                var icon = findAlertSetting(settings, 'icon', config['icon']);
+                var className = findAlertSetting(settings, 'className', config['className']);
 
                 // Label can be language specific and could be specified via user configuration
                 if (typeof label === 'object') {
@@ -79,9 +41,15 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
                     }
                 }
 
+                var iconTag = `<i class="fa ${icon}"></i>`;
+
                 return (
-                    `<div class="${style.className}">
-                        <p class="title">${isIconVisible ? style.icon : ''}${isLabelVisible ? label : ''}</p><p>${value}
+                    `<div class="alert ${style} ${className}">
+                        <p class="title">
+                            ${isIconVisible ? iconTag : ''}
+                            ${isLabelVisible ? label : ''}
+                        </p>
+                        <p>${value}
                      </div>`
                 );         
             });
