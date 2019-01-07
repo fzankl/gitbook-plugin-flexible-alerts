@@ -1,5 +1,8 @@
 # GitBook plugin: Flexible Alerts
 
+![Build Status](https://api.travis-ci.org/zanfab/gitbook-plugin-flexible-alerts.svg)
+[![npm version](https://img.shields.io/npm/v/gitbook-plugin-flexible-alerts/latest.svg)](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)
+
 This GitBook plugin converts blockquotes into beautiful alerts. Look and feel can be configured on a global as well as on a alert specific level so output does fit your needs (some examples are shown below). In addition, you can provide own alert types.
 
 ![Sample alerts created with plugin 'flexible-alerts'](https://user-images.githubusercontent.com/44210522/50688702-ea774f00-1026-11e9-9281-ca615cb466f5.jpg)
