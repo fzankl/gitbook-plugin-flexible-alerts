@@ -1,6 +1,6 @@
-# GitBook Plugin: Flexible Alerts
+# GitBook plugin: Flexible Alerts
 
-This GitBook Plugin converts blockquotes into beautiful alerts. Look and feel can be configured on a global as well as on a alert specific level so output does fit your needs (some examples are shown below). In addition, you can provide own alert types.
+This GitBook plugin converts blockquotes into beautiful alerts. Look and feel can be configured on a global as well as on a alert specific level so output does fit your needs (some examples are shown below). In addition, you can provide own alert types.
 
 ![Sample alerts created with plugin 'flexible-alerts'](https://user-images.githubusercontent.com/44210522/50688702-ea774f00-1026-11e9-9281-ca615cb466f5.jpg)
 
@@ -110,7 +110,7 @@ Note: Above snippets can be used as complete `book.json` file, if one of these m
 
 ## Usage
 
-To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!type]`. By default types `NOTE`, `TIP`, `WARNING` and `DANGER` are supported. You can extend the available types by providing a valid configuration (see below for an example). 
+To use the plugin just modify an existing blockquote and prepend a line matching pattern `[!type]`. By default types `NOTE`, `TIP`, `WARNING` and `DANGER` are supported. You can extend the available types by providing a valid configuration (see below for an example).
 
 ```markdown
 > [!NOTE]
@@ -128,7 +128,7 @@ As you can see in the second snippet, output can be configured on alert level al
 | --------------- | ---- |
 | style | One of follwowing values: callout, flat |
 | label  | Any text |
-| icon  | A valid Font Awesome icon, e.g. 'fa-info-circle' |
+| icon  | A valid Font Awesome icon, e.g. 'fa fa-info-circle' |
 | className  | A name of a CSS class which specifies the look and feel |
 | labelVisibility | One of follwowing values: visible (default), hidden |
 | iconVisibility  | One of follwowing values: visible (default), hidden |
@@ -155,7 +155,7 @@ As mentioned above you can provide your own alert types. Therefore, you have to 
       "style": "callout",
       "comment": {
         "label": "Comment",
-        "icon": "fa-comments",
+        "icon": "fa fa-comments",
         "className": "info"
       }
     }
@@ -174,7 +174,10 @@ In Markdown just use the alert according to the types provided by default.
 
 ## Troubleshooting
 
-If alerts do no look as expected, check if your `book.json` as well as alerts in Markdown are valid according to this documentation.
+If alerts do not look as expected, check if your `book.json` as well as alerts in Markdown are valid according to this documentation.
 
 ## Changelog
+
+01/07/2019 - Moved complete icon definition to pluginsConfig section
+
 01/05/2019 - Initial Release
