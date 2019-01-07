@@ -1,6 +1,6 @@
 {
   "name": "gitbook-plugin-flexible-alerts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitBook plugin to convert blockquotes into beautiful and configurable alerts using preconfigured or own styles and alert types.",
   "keywords": [
     "gitbook",
@@ -40,7 +40,7 @@
         "title": "Configuration for alerts of type 'note'",
         "default": {
           "label": "Note",
-          "icon": "fa-info-circle",
+          "icon": "fa fa-info-circle",
           "className": "info"
         }
       },
@@ -49,7 +49,7 @@
         "title": "Configuration for alerts of type 'tip'",
         "default": {
           "label": "Tip",
-          "icon": "fa-lightbulb-o",
+          "icon": "fa fa-lightbulb-o",
           "className": "tip"
         }
       },
@@ -58,7 +58,7 @@
         "title": "Configuration for alerts of type 'warning'",
         "default": {
           "label": "Warning",
-          "icon": "fa-exclamation-triangle",
+          "icon": "fa fa-exclamation-triangle",
           "className": "warning"
         }
       },
@@ -67,7 +67,7 @@
         "title": "Configuration for alerts of type 'danger'",
         "default": {
           "label": "Attention",
-          "icon": "fa-ban",
+          "icon": "fa fa-ban",
           "className": "danger"
         }
       }

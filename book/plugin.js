@@ -10,19 +10,19 @@ function findAlertSetting(input, key, fallback, callback) {
 
 require(["gitbook", "jQuery"], function(gitbook, $) {
     gitbook.events.bind("page.change", function() {
-        var gitBookConfiguration = gitbook.state.config.pluginsConfig['flexible-alerts'];
+        var options = gitbook.state.config.pluginsConfig['flexible-alerts'];
 
         $('blockquote').each(function() {
             var origin = $(this).html();
             var content = origin.replace(/\[!(\w*)((?:\|[\w*:[\w\s]*)*?)\]([\s\S]*)/g, (match, key, settings, value) => {
-                var config = gitBookConfiguration[key.toLowerCase()]
+                var config = options[key.toLowerCase()]
 
                 if (!config) {
                     return match;
                 }
                 
                 // Style configuration
-                var style = findAlertSetting(settings, 'style', gitBookConfiguration['style']);
+                var style = findAlertSetting(settings, 'style', options['style']);
                 var isIconVisible = findAlertSetting(settings, 'iconVisibility', 'visible', (value) => value !== 'hidden');
                 var isLabelVisible = findAlertSetting(settings, 'labelVisibility', 'visible', (value) => value !== 'hidden');
                 var label = findAlertSetting(settings, 'label', config['label']);
@@ -41,7 +41,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
                     }
                 }
 
-                var iconTag = `<i class="fa ${icon}"></i>`;
+                var iconTag = `<i class="${icon}"></i>`;
 
                 return (
                     `<div class="alert ${style} ${className}">
