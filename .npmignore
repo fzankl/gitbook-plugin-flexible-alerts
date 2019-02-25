@@ -1,4 +1,5 @@
 *
+!index.js
 !dist/**
 !package.json
 !LICENSE
