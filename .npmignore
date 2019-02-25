@@ -1,5 +1,5 @@
 *
-!book/**
-!index.js
+!dist/**
 !package.json
 !LICENSE
+!README.md
