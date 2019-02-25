@@ -2,6 +2,7 @@
 
 ![Build Status](https://api.travis-ci.org/zanfab/gitbook-plugin-flexible-alerts.svg)
 [![npm version](https://img.shields.io/npm/v/gitbook-plugin-flexible-alerts/latest.svg)](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)
+[![npm Downloads](https://img.shields.io/npm/dt/gitbook-plugin-flexible-alerts.svg)](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)
 
 This GitBook plugin converts blockquotes into beautiful alerts. Look and feel can be configured on a global as well as on a alert specific level so output does fit your needs (some examples are shown below). In addition, you can provide own alert types.
 
@@ -139,7 +140,7 @@ As you can see in the second snippet, output can be configured on alert level al
 Multiple options can be used for single alerts as shown below:
 
 ```markdown
-> [!TIP|style:flat|label:My own heading|iconVisibility:false]
+> [!TIP|style:flat|label:My own heading|iconVisibility:hidden]
 > An alert of type 'tip' using alert specific style 'flat' which overrides global style 'callout'.
 > In addition, this alert uses an own heading and hides specific icon.
 ```
@@ -180,6 +181,8 @@ In Markdown just use the alert according to the types provided by default.
 If alerts do not look as expected, check if your `book.json` as well as alerts in Markdown are valid according to this documentation.
 
 ## Changelog
+
+02/24/2019 - Added support for Internet Explorer 11
 
 01/07/2019 - Moved complete icon definition to pluginsConfig section
 
