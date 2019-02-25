@@ -20,8 +20,7 @@
   "scripts": {
     "build": "rollup -c",
     "clean": "rimraf dist/*",
-    "copy:metadata": "cpx {package.json,README.md,LICENSE} dist",
-    "prepare": "npm run clean && npm run build && npm run copy:metadata",
+    "prepare": "npm run clean && npm run build",
     "start": "npm run build -- -w"
   },
   "homepage": "https://github.com/zanfab/gitbook-plugin-flexible-alerts#readme",
@@ -35,7 +34,6 @@
   "devDependencies": {
     "@babel/core": "^7.3.3",
     "@babel/preset-env": "^7.3.1",
-    "cpx": "^1.5.0",
     "eslint": "^5.14.1",
     "lodash.merge": "^4.6.1",
     "rimraf": "^2.6.3",
