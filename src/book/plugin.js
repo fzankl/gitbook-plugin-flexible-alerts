@@ -1,6 +1,5 @@
 function findAlertSetting(input, key, fallback, callback) {
-  const match = (input || '').match(new RegExp(`${key}:(([\\w\\s]*))`));
-
+  const match = (input || '').match(new RegExp(`${key}:((.*))`));
   if (!match) {
     return callback ? callback(fallback) : fallback;
   }
@@ -14,7 +13,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
 
     $('blockquote').each(function () {
       const origin = $(this).html();
-      const content = origin.replace(/\[!(\w*)((?:\|[\w*:[\w\s]*)*?)\]([\s\S]*)/g, (match, key, settings, value) => {
+      const content = origin.replace(/\[!(\w*)((?:\|\w*:.*)*?)\]([\s\S]*)/g, (match, key, settings, value) => {
         const config = options[key.toLowerCase()];
 
         if (!config) {
