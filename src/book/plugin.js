@@ -1,5 +1,5 @@
 function findAlertSetting(input, key, fallback, callback) {
-  const match = (input || '').match(new RegExp(`${key}:((.*))`));
+  const match = (input || '').match(new RegExp(`${key}:(([^\\r\\n|]*))`));
   if (!match) {
     return callback ? callback(fallback) : fallback;
   }
