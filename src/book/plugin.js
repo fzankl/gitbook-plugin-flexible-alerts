@@ -32,7 +32,7 @@ require(['gitbook', 'jQuery'], function (gitbook, $) {
         if (typeof label === 'object') {
           const language = gitbook.state.innerLanguage;
 
-          if (language && label.hasOwnProperty(language)) {
+          if (language && Object.prototype.hasOwnProperty.call(label, language)) {
             label = label[language];
           } else {
             isLabelVisible = false;
