@@ -182,7 +182,9 @@ If alerts do not look as expected, check if your `book.json` as well as alerts i
 
 ## Changelog
 
-04/08/2019 - Fixed issue concerning languages using characters others than [a-z,A-Z,0-9] like Chinese or Russian.
+08/15/2022 - Fixed code smell in stylesheet file and updated development dependencies
+
+04/08/2019 - Fixed issue concerning languages using characters others than [a-z,A-Z,0-9] like Chinese or Russian
 
 02/24/2019 - Added support for Internet Explorer 11
 
