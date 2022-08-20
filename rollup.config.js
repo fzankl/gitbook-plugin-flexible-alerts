@@ -91,7 +91,7 @@ const pluginCJS = merge({}, config, {
     terser(pluginSettings.terser),
     copy({
       assets: [
-        './src/book/style.css'
+        './style.css'
       ]
     })
   ]
