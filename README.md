@@ -1,6 +1,6 @@
 # GitBook plugin: Flexible Alerts
 
-![Build Status](https://api.travis-ci.org/zanfab/gitbook-plugin-flexible-alerts.svg)
+![Build Status](https://github.com/fzankl/gitbook-plugin-flexible-alerts/actions/workflows/main/badge.svg)
 [![npm version](https://img.shields.io/npm/v/gitbook-plugin-flexible-alerts/latest.svg)](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)
 [![npm Downloads](https://img.shields.io/npm/dt/gitbook-plugin-flexible-alerts.svg)](https://www.npmjs.com/package/gitbook-plugin-flexible-alerts)
 
